@@ -1,0 +1,293 @@
+/* !GENERAL */
+
+html {
+    scroll-behavior: smooth;
+    font-family: poppins;
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url(fonts/poppins.ttf);
+}
+
+@font-face {
+    font-family: 'poppins-medium';
+    src: url(fonts/Poppins-Medium.ttf);
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px rgb(32, 32, 32, .6);
+}
+
+.icon {
+    width: 1.5rem;
+    margin-right: .8rem;
+    margin-bottom: -0.2rem;
+}
+
+a {
+    color: white;
+}
+
+/* FONT SIZE */
+
+h1 {
+    font-size: clamp(2.8rem, 3rem, 3.2rem);
+    /* font-size: 3.2rem; */
+    /* clamp(min, fav, max) */
+}
+
+h2 {
+    font-size: clamp(2rem, 2.4rem, 2.4rem);
+    margin: 0 0 1.4em;
+}
+
+h2 a {
+    text-decoration: none;
+}
+
+h3 {
+    font-size: clamp(1.6rem, 1.5em, 1.8rem);
+    font-family: poppins-medium;
+}
+
+ul, p, label {
+    font-size: clamp(1rem, 1.5em, 1.6rem);
+}
+
+/* BACKGROUND & COLOR */
+
+.blue {
+    background-color: #0475ba;
+    color: white;
+}
+
+.title {
+    color: #0475ba;
+}
+
+main>* {
+    padding: 40px;
+}
+
+/* CONTENU CENTRE */
+
+.text-wrapper {
+    max-width: 80rem;
+    margin: 0 auto;
+
+}
+
+/* !HEADER */
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    height: 70px;
+    padding-left: 10px;
+}
+
+header h2 {
+    margin: 0;
+}
+
+/* NAVIGATION */
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+/* !ACCUEIL */
+
+#accueil .text-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.name-box {
+    text-align: center;
+    line-height: 2;
+}
+
+/* !PRESENTATION */
+
+#prez ul{
+    padding-left: clamp(2rem, 1.5em, 4rem);
+}
+
+/* !EXPERIENCES PRO */
+
+.one-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenu-text {
+    line-height: 3;
+}
+
+/* !FOOTER */
+
+footer ul {
+    list-style: none;
+    padding: 4rem;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+}
+
+/* !CONTACT */
+
+/* FORMULAIRE */
+
+#contact {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-box {
+    width: 40rem;
+    margin: 4rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    box-shadow: 3px 3px 15px rgba(129, 129, 129, 0.2);
+}
+
+.blue-line {
+    height: .6rem;
+    background-color: #0475ba;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+form {
+    padding: 2.8rem 2.4rem 3.6rem;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"], textarea {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 1px;
+    color: rgb(100, 100, 100);
+    font-family: sans-serif;
+}
+
+input[type="submit"] {
+    border-radius: 4px;
+    padding: 1.2rem;
+    margin-top: .8rem;
+    background-color: #0475ba;
+    font-size: 1.4rem;
+    color: white;
+    border-style: none;
+}
+
+legend {
+    font-size: clamp(2rem, 2.4rem, 2.4rem);
+    text-align: center;
+    margin: 0 0 1em;
+}
+
+label, input[type="submit"] {
+    font-family: poppins-medium, sans-serif;
+}
+
+label {
+    line-height: 2;
+}
+
+
+
+/* !--------------------- RESPONSIVE DESIGN --------------------- */
+
+@media screen and (max-width: 950px) {
+
+    #accueil .text-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        display: none;
+    }
+
+    section h2 {
+        text-align: center;
+    }
+
+    footer div {
+        flex-direction: column;
+    }
+
+    footer ul:first-child {
+        padding-bottom: 1rem;
+    }
+
+    footer ul:last-child {
+        padding-top: 1rem;
+    }
+
+    main>* {
+        padding: 40px 20px;
+    }
+
+    #contact {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .contact-box {
+        width: auto;
+        margin: 4rem auto;
+    }
+
+    form {
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .contact-box {
+        margin: 1rem;
+    }
+}
+
+
+
+
+
+
+
