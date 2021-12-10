@@ -3,6 +3,7 @@
 html {
     scroll-behavior: smooth;
     font-family: poppins;
+    background-color: #ffd527;
     font-size: 62.5%; /* 1rem = 10px */
 }
 
@@ -36,7 +37,7 @@ img {
 }
 
 a {
-    color: white;
+    color: black;
 }
 
 /* FONT SIZE */
@@ -50,6 +51,7 @@ h1 {
 h2 {
     font-size: clamp(2rem, 2.4rem, 2.4rem);
     margin: 0 0 1.4em;
+    text-shadow: rgba(32, 32, 32, .6);
 }
 
 h2 a {
@@ -67,13 +69,21 @@ ul, p, label {
 
 /* BACKGROUND & COLOR */
 
-.blue {
-    background-color: #0475ba;
-    color: white;
+.yellow {
+    background-color: #ffd527;
+    color: black;
+}
+
+.white {
+    background-color: white;
+}
+
+.black {
+    background-color: black;
 }
 
 .title {
-    color: #0475ba;
+    color: #ffd527;
 }
 
 main>* {
@@ -143,6 +153,18 @@ nav a {
     line-height: 3;
 }
 
+/* !FORMATION */
+
+.training {
+    margin: 1.6rem 0;
+}
+
+.training h3 {
+    padding: 1rem 0;
+}
+
+/* !PROJET */
+
 /* !FOOTER */
 
 footer ul {
@@ -156,6 +178,10 @@ footer div {
     max-width: 600px;
 }
 
+footer a {
+    color: #ffd527;
+}
+
 /* !CONTACT */
 
 /* FORMULAIRE */
@@ -165,6 +191,7 @@ footer div {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 
 .contact-box {
@@ -178,7 +205,7 @@ footer div {
 
 .blue-line {
     height: .6rem;
-    background-color: #0475ba;
+    background-color: #ffd527;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 
@@ -206,9 +233,9 @@ input[type="submit"] {
     border-radius: 4px;
     padding: 1.2rem;
     margin-top: .8rem;
-    background-color: #0475ba;
+    background-color: #ffd527;
     font-size: 1.4rem;
-    color: white;
+    color: black;
     border-style: none;
 }
 
